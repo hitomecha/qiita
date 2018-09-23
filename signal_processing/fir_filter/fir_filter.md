@@ -1,4 +1,10 @@
-初心者向きにR言語を用いたFIRフィルターの作成方法をまとめました。基本的な流れは[R言語を用いたIIRフィルターの作成](https://qiita.com/hitomecha/items/80d6e3309aa33941cb5e)とほぼ同じです。
+---
+title: R言語を用いたFIRフィルタの作成
+tags: R
+author: hitomecha
+slide: false
+---
+初心者向きにR言語を用いたFIRフィルターの作成方法をまとめました。基本的な流れは、前回投稿した[R言語を用いたIIRフィルターの作成](https://qiita.com/hitomecha/items/80d6e3309aa33941cb5e)とほぼ同じです。
 
 ## パッケージの準備
 signal パッケージ[1]を使用し、FIRフィルターを作成します。まず、パッケージをインストールします。
@@ -88,4 +94,4 @@ plot(plot_fft, data_psd[1:(length(data_psd)/2)], t="l", log="x", xlab="frequency
 フィルターにより50Hz成分がなくなりました。
 
 ### 参考文献
-[1] Uwe Ligges et al. "Signal Processing", ver. 0.7-6, https://cran.r-project.org/web/packages/signal/signal.pdf, 参照July 7, 2018.
+[1] Uwe Ligges et al. "Signal Processing", ver. 0.7-6, https://cran.r-project.org/web/packages/signal/signal.pdf, 参照July 7, 2018.
